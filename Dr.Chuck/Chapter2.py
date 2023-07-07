@@ -9,10 +9,19 @@ else:
     print("Tail")"""
     
 #Grades Calculation
-line = 55
+"""line = 55
 
 study_grade = int(input("Study Grade: "))
 if study_grade >= line:
     print("You Passed!")
 else:
-    print("You Failed!")
+    print("You Failed!")"""
+
+#pH Levels
+ph = int(input("Enter a number between 0-14: "))
+if ph >= 7:
+    print("Basic!")
+elif ph <= 7:
+    print("Acidic!")
+else:
+    print("Natural.")
