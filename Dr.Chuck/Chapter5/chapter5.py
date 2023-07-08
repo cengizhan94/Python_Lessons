@@ -19,3 +19,11 @@ print(y)"""
 y = re.findall('^F.+:',x)
 print(y)"""
 
+#Non-Greedy Matching
+
+x = 'From: sonsair11@gmail.com Sat Jan 5 07:28:16 2023'
+y = re.findall('^F.+?:',x)
+print(y)
+
+y = re.findall('\S+@\S+',x)
+print(y)
