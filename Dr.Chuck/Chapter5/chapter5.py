@@ -31,3 +31,6 @@ print(y)"""
 data = 'From c.engiz11@gmail.com Mon Jul 07:40:01 2023'
 atpos = data.find('@')
 print(atpos)
+
+sppos = data.find(' ',atpos)
+print(sppos)
