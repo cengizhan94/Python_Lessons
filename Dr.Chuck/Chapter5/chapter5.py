@@ -40,7 +40,16 @@ print(host)"""
 
 #The double split pattern
 
-words = data.split()
+"""words = data.split()
 email = words[1]
 pieces = email.split('@')
-print(pieces[1])
+print(pieces[1])"""
+
+#The regex version
+
+y = re.findall('@([^ ]*)',data)
+#Look through the string until you find at sign '@'
+#Match non-blank charaters '[^ ]'
+#Match many of them '*'
+print(y)
+
