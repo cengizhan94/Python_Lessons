@@ -6,9 +6,16 @@ for line in hand:
     if re.search('^from',line):
         print(line)"""
 
-x = "My two favorite numbers are 23 and7"
+"""x = "My two favorite numbers are 23 and7"
 y = re.findall('[0-9]+',x)
 print(y)
 
 y = re.findall('[aeio]+',x)
-print(y)
+print(y)"""
+
+#Greedy Matching
+
+"""x = 'From: using the: character'
+y = re.findall('^F.+:',x)
+print(y)"""
+
