@@ -21,9 +21,13 @@ print(y)"""
 
 #Non-Greedy Matching
 
-x = 'From: sonsair11@gmail.com Sat Jan 5 07:28:16 2023'
+"""x = 'From: sonsair11@gmail.com Sat Jan 5 07:28:16 2023'
 y = re.findall('^F.+?:',x)
 print(y)
 
 y = re.findall('\S+@\S+',x)
-print(y)
+print(y)"""
+
+data = 'From c.engiz11@gmail.com Mon Jul 07:40:01 2023'
+atpos = data.find('@')
+print(atpos)
