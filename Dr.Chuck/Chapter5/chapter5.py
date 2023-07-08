@@ -28,7 +28,7 @@ print(y)
 y = re.findall('\S+@\S+',x)
 print(y)"""
 
-data = 'From c.engiz11@gmail.com Mon Jul 07:40:01 2023'
+#data = 'From c.engiz11@gmail.com Mon Jul 07:40:01 2023'
 """atpos = data.find('@')
 print(atpos)
 
@@ -47,9 +47,9 @@ print(pieces[1])"""
 
 #The regex version
 
-y = re.findall('@([^ ]*)',data)
+"""y = re.findall('@([^ ]*)',data)
 #Look through the string until you find at sign '@'
 #Match non-blank charaters '[^ ]'
 #Match many of them '*'
-print(y)
+print(y)"""
 
