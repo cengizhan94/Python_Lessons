@@ -103,14 +103,36 @@ print(add_two_numbers(num2 = 3, num1 = 2)) """
 """ If we do not return a value with a  function, then our function is returning  None by default. To return a value with a function we use the keyword return followed by the variable we are returning. We can return any kind of data types from a function """
 
 #Returning string
-def print_name(firstname):
+""" def print_name(firstname):
     return firstname
 
-print_name('Cengiz Han')
+print(print_name('Cengiz Han'))
 
 def print_full_name(firstName,lastName):
     space = " "
     full_name = firstName + space + lastName
     return full_name
 
-print_full_name(firstName="Cengiz Han", lastName="Uyar") 
+print(print_full_name(firstName="Cengiz Han", lastName="Uyar")) """ 
+
+#returning a number
+
+def add_two_numbers(num1,num2):
+    total = num1 + num2
+    return total
+print(add_two_numbers(2,3))
+
+def calculate_age (current_year, birth_year):
+    age = current_year - birth_year
+    return age
+print('Age: ',calculate_age(2023,1994))
+
+#returning a boolean 
+
+def is_even (n):
+    if n % 2 == 0:
+        print('even')
+        return True
+    return False
+print(is_even(10))
+print(is_even(7))
