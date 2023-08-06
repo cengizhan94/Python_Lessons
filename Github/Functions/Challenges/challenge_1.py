@@ -104,6 +104,26 @@ solutions3 = solve_quadratic_eqn(1, -4, 4)
 print("Solutions 1:", solutions1)
 print("Solutions 2:", solutions2)
 print("Solutions 3:", solutions3) """
+#8
+nums = [1,2,3,4,5,6]
+
+# def print_list(list):
+#     for item in list:
+#         print(item)
+# print_list(nums)
+
+#9-
+reverseNum = []
+def reverse_list(array):
+    for i in range(len(array)-1,-1,-1):
+        reverseNum.append(array[i])
+    return reverseNum      
+
+reversedResult = reverse_list(nums)
+print("Original:",nums)
+print("Reversed Array: ", reversedResult)
+
+#10-
 
 
         
