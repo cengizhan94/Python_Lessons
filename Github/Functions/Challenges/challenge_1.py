@@ -105,7 +105,7 @@ print("Solutions 1:", solutions1)
 print("Solutions 2:", solutions2)
 print("Solutions 3:", solutions3) """
 #8
-nums = [1,2,3,4,5,6]
+# nums = [1,2,3,4,5,6]
 
 # def print_list(list):
 #     for item in list:
@@ -113,18 +113,42 @@ nums = [1,2,3,4,5,6]
 # print_list(nums)
 
 #9-
-reverseNum = []
-def reverse_list(array):
-    for i in range(len(array)-1,-1,-1):
-        reverseNum.append(array[i])
-    return reverseNum      
+# reverseNum = []
+# def reverse_list(array):
+#     for i in range(len(array)-1,-1,-1):
+#         reverseNum.append(array[i])
+#     return reverseNum      
 
-reversedResult = reverse_list(nums)
-print("Original:",nums)
-print("Reversed Array: ", reversedResult)
+# reversedResult = reverse_list(nums)
+# print("Original:",nums)
+# print("Reversed Array: ", reversedResult)
 
-#10-
+#10-Declare a functaion named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items.
 
+items = ["a","b","c"]
+
+def capitalized_items(liste):
+    capitalized = []
+    for item in liste:
+            capitalized.append(item.upper())
+    return capitalized
+
+capitalized_list= capitalized_items(items)
+print(capitalized_list)
+
+#11- Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end.
+def add_item(input_list,new_item):
+    updated_list = input_list.copy()
+    updated_list.append(new_item)
+    return updated_list
+
+original_list = [1,2,3]
+new_item = 4
+new_list = add_item(original_list,new_item)
+
+print("Original list: ", original_list)
+print("New List : ", new_list)
+        
 
         
     
