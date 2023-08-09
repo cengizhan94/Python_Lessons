@@ -151,8 +151,65 @@ print(add_item(original_list,"Cengo"))
 # print("Original list: ", original_list)
 # print("New List : ", new_list)
         
+#-12 Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
 
-        
+def remove_item(input_list,item_to_remove):
+    updated_list = []
+    for item in input_list:
+        if item != item_to_remove:
+            updated_list.append(item)
+    return updated_list
+
+my_list = [1,2,3,4,5,6]
+my_list2 = ["Cengo","Zeyno","Pervo","Zorro"]
+
+item_to_remove = "Pervo"
+updated_list = remove_item(my_list2,item_to_remove)
+
+print("Liste: ",my_list2)
+print("Updated List: ", updated_list)
+
+#13-Declare a function named sum_of_numbers. It takes a number paramerter and it adds all the numbers in the range.
+# def sum_of_numbers(number):
+#     return number * (number + 1)//2
+
+# result = sum_of_numbers(5)
+# print(result)
+
+# def sum_of_numbers(n):
+#     return sum(range(1,n+1))
+
+# result = sum_of_numbers(5)
+# print("Sum of numbers from 1 to 5:", result) 
+
+def sumnum(n):
+    return sum(range(1, n + 1))
+
+result = sumnum(100)
+print(result)
+
+#14-declare a function named sum_of_odds. It takes a number parameter and it adds all odd numbers in that range
+
+def sum_of_odds (n):
+    total_sum = 0
+    for num in range(1, n+1):
+        if num %2 != 0:
+            total_sum += num
+    return total_sum
+    
+result1 = sum_of_odds(100)
+print(result1)
+
+#15
+def sum_of_evens (n):
+    total_sum = 0
+    for num in range(1, n+1):
+        if num %2 == 0:
+            total_sum += num
+    return total_sum
+    
+result = sum_of_evens(100)
+print(result)
     
     
 
