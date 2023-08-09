@@ -1,23 +1,23 @@
-# def usalma(number):
-#     def inner(power):
-#         return number ** power
-#     return inner
+def usalma(number):
+    def inner(power):
+        return number ** power
+    return inner
 
-# two = usalma(2)
-# three = usalma(3)
-# print(three(3))
+two = usalma(2)
+three = usalma(3)
+print(three(3))
 
-# def yetki_sorgula(page):
-#     def inner(role):
-#         if role =='Admin':
-#             return "{0} rolunun {1} sayfasına ulasabilir".format(role,page)
-#         else:
-#             return "{0} rolü {1} sayfasına ulaşamaz".format(role,page)
-#     return inner
+def yetki_sorgula(page):
+    def inner(role):
+        if role =='Admin':
+            return "{0} rolunun {1} sayfasına ulasabilir".format(role,page)
+        else:
+            return "{0} rolü {1} sayfasına ulaşamaz".format(role,page)
+    return inner
 
-# user1 = yetki_sorgula("Product Edit")
-# print(user1("Admin"))
-# print(user1("User"))
+user1 = yetki_sorgula("Product Edit")
+print(user1("Admin"))
+print(user1("User"))
 
 def islem(islem_adi):
     def toplam(*args):
