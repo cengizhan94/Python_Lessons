@@ -7,7 +7,7 @@ def calculate_time(func):
         time.sleep(1)
         func(*args,**kwargs)
         finish = time.time()
-        print("fonksiyon "+func.__name__+ str(finish - start)+" saniye sürdü")
+        print("fonksiyon "+func.__name__+" "+ str(finish - start)+" saniye sürdü")
     return wrapper
         
 @calculate_time
