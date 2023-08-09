@@ -138,16 +138,18 @@ print(capitalized_list)
 
 #11- Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end.
 def add_item(input_list,new_item):
-    updated_list = input_list.copy()
+    updated_list = input_list.copy()#original list protected
     updated_list.append(new_item)
     return updated_list
 
 original_list = [1,2,3]
 new_item = 4
 new_list = add_item(original_list,new_item)
+print(add_item(original_list,"Cengo"))
 
-print("Original list: ", original_list)
-print("New List : ", new_list)
+
+# print("Original list: ", original_list)
+# print("New List : ", new_list)
         
 
         
