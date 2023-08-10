@@ -1,6 +1,6 @@
 #Map function
 
-# numbers = [1,2,3,4,5]
+numbers = [1,2,3,4,5]
 # def square(x):
 #     return x**2
 
@@ -14,7 +14,7 @@
 # numbers_int = map(int,numbers_str)
 # print(list(numbers_int))
 
-# names = ["Cengiz Han","Zeynep","Pervin"]
+names = ["Cengiz Han","Zeynep","Pervin"]
 
 # def change_to_upper(name):
 #     return name.upper()
@@ -26,3 +26,30 @@
 # print(list(names_upper_cased2))
 
 #filter function
+
+def is_even (num):
+    if num %2==0:
+        return True
+    return False
+
+even_numbers = filter(is_even,numbers)
+print(list(even_numbers))
+
+def is_odd(num):
+    if num %2 != 0:
+        return True
+    return False
+
+odd_numbers = filter(is_odd,numbers)
+print(list(odd_numbers))
+
+def is_name_long(name):
+    if len(name)>7:
+        return True
+    return False
+
+long_names = filter(is_name_long,names)
+print(list(long_names))
+
+
+
