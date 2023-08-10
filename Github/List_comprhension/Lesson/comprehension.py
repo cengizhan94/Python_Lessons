@@ -10,7 +10,7 @@ squares = [i * i for i in range(11)]
 print(squares)
 
 numbers2 = [(i,i * i)for i in range(11)]
-print(numbers2)
+print("numbers2: ",numbers2)
 
 even_numbers = [i for i in range(21) if i % 2 == 0]
 print(even_numbers)
