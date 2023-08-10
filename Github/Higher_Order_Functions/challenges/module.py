@@ -1,3 +1,3 @@
-countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
+countries = ['Turkey', 'Finland', 'iceland', 'Iraq', 'Sweden', 'Denmark','Norway','Estonia']
+names = ['Cengiz Han', 'Zeynep', 'Pervin', 'Musti']
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
