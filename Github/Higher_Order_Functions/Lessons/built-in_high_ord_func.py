@@ -1,5 +1,8 @@
 #Map function
 
+from functools import reduce
+
+
 numbers = [1,2,3,4,5]
 # def square(x):
 #     return x**2
@@ -10,7 +13,7 @@ numbers = [1,2,3,4,5]
 # numbers_squared2 = map(lambda x : x **2,numbers)
 # print(list(numbers_squared2))
 
-# numbers_str = ["1","2","3","4","5"]
+numbers_str = ["1","2","3","4","5"]
 # numbers_int = map(int,numbers_str)
 # print(list(numbers_int))
 
@@ -51,5 +54,11 @@ def is_name_long(name):
 long_names = filter(is_name_long,names)
 print(list(long_names))
 
+#reduce function
 
+def add_two_numbers(x,y):
+    return int(x) + int(y)
+
+total = reduce(add_two_numbers,numbers_str)
+print(total)
 
